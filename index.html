@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>天気</title>
+</head>
+
+<body id="body">
+    <main>
+        <h1 onclick="touchTitle()">
+            ウェザーちゃんとウェアーくん
+        </h1>
+        <article>
+            <section class="box">
+                <p id="rarity" onclick="touchRarity()">
+                Rarity
+                </p>
+                <img src="saisho.png" id="illust" onclick="touchIllust()">
+                <br>
+                <p id="comment">
+                    こんにちは！あなたのいる場所を右上にアルファベットで入力してね！
+                </p>
+            </section>
+
+            <section class="box">
+                <section id="search" onclick="touchSearch()">
+                    地名：
+                    <input type="text" id="city-input">
+                    <input type="button" value="決定" id="search-button">
+                    <nobr id="time">
+
+                    </nobr>
+                </section>
+
+
+                <img src="qmark.png" id="weather-img" onclick="touchWeather()">
+                <img src="qmark.png" id="mark-img" onclick="touchMark()">
+
+                <section id="temp" onclick="touchTemp()">
+                    気温：ー
+                </section>
+                <p id="humidity" onclick="touchHumidity()">
+                    湿度：ー
+                </p>
+
+                <section id="wind" onclick="touchWind()">
+                    風速：ー ・ 方向：ー
+                </section>
+                <section id="results" onclick="touchResults()">
+                    決定すると天気の情報が表示されます。
+                </section>
+            </section>
+    </main>
+
+</body>
+
+</html>
